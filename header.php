@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta charset="UTF-8" />
     <?php
     wp_head();
     ?>
@@ -12,7 +13,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-8 col-sm-6">
-                <a class="logo" href="index.html"><?php echo get_bloginfo('name'); ?></a>
+                <a class="logo" href="<?php get_option('siteurl'); ?>"><?php echo get_bloginfo('name'); ?></a>
             </div>
             <div class="col-sm-6 hidden-xs">
                 <form id="searchform" class="searchform">
