@@ -19,8 +19,8 @@ get_header()
                             array(
                                 'menu' => 'secondary',
                                 'container' => '',
+                                'items_wrap' => '%3$s',
                                 'theme_location' => 'secondary',
-                                'items-wrap' => '<ul class="side-menu">%3$s</ul>'
                             )
                         )
                         ?>
