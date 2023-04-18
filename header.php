@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<!-- hämtar info om sidans head  -->
 
 <head>
     <meta charset="UTF-8" />
@@ -13,11 +14,13 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-8 col-sm-6">
+                <!-- visar titel med länk -->
                 <a class="logo" href="<?php get_option('siteurl'); ?>"><?php echo get_bloginfo('name'); ?></a>
             </div>
             <div class="col-sm-6 hidden-xs">
                 <form id="searchform" class="searchform">
                     <div>
+                        <!-- visar sökfält -->
                         <?php get_search_form() ?>
                     </div>
                 </form>
@@ -34,6 +37,7 @@
 <div class="mobile-search">
     <form id="searchform" class="searchform">
         <div>
+            <!-- visar sökfält för mobilmeny -->
             <?php get_search_form() ?>
         </div>
     </form>
@@ -50,6 +54,7 @@
         <div class="row">
             <div class="col-xs-12">
                 <ul class="menu">
+                    <!-- visar menyn i toppen av sidan  -->
                     <?php
                     wp_nav_menu(
                         array(

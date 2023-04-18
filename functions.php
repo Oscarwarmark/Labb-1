@@ -1,5 +1,5 @@
 <?php
-
+// lägger till stöd för temat
 function o_theme_support()
 {
     add_theme_support('title-tag');
@@ -8,7 +8,7 @@ function o_theme_support()
 
 add_action('after_setup_theme', 'o_theme_support');
 
-
+// registrerar menyer
 function my_menus()
 {
     $locations = array(
@@ -24,7 +24,7 @@ function my_menus()
 
 add_action('init', 'my_menus');
 
-
+// importerar css 
 function o_register_styles()
 {
     wp_enqueue_style('o-font-awesome', get_template_directory_uri() . "/assets/css/font-awesome.css", array(), '1.0', 'all');
@@ -34,7 +34,7 @@ function o_register_styles()
 
 add_action('wp_enqueue_scripts', 'o_register_styles');
 
-
+// importerar script filer 
 function o_register_scripts()
 {
 
@@ -46,7 +46,7 @@ add_action('wp_enqueue_scripts', 'o_register_scripts');
 
 function o_widget_area()
 {
-    // widgets för footer
+    // registrarar widgets för footer
     register_sidebar(
         array(
             'before_widget'  => '<div>',

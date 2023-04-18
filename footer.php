@@ -2,6 +2,7 @@
     <div class="container">
         <div class="row top">
             <div class="col-xs-12 col-sm-6 col-md-4">
+                <!-- hämtar widgets för footer  -->
                 <?php dynamic_sidebar('footer-1') ?>
             </div>
             <div class="col-xs-12 col-sm-3 col-md-3 col-md-offset-1">
