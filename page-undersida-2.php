@@ -2,8 +2,6 @@
 get_header()
 ?>
 
-
-
 <main>
     <section>
         <div class="container">
@@ -30,7 +28,6 @@ get_header()
         </div>
     </section>
 </main>
-
 
 <?php
 get_footer();
